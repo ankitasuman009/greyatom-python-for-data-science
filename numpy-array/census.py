@@ -50,11 +50,6 @@ print(minority_race)
 
 _citizens = census[: , 0] > 60
 senior_citizens = census[_citizens]
-# j , working_hours_sum = 0, 0
-# for i in _citizens:
-#     if i:
-#         working_hours_sum += census[j , 6]
-#     j +=1
 working_hours_sum = senior_citizens[: , 6].sum()
 print(working_hours_sum)
 senior_citizens_len = len(senior_citizens)
